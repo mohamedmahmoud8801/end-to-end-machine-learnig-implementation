@@ -1,1 +1,5 @@
-# end-to-end-machine-learnig-implementation
+# End-to-End Machine Learning Implementation
+
+Professional design documentation:
+
+- [High-Level Design (HLD)](docs/HLD.md)

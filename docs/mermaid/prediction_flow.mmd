@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Client
+    participant API as FastAPI Service
+    participant Predictor as Prediction Pipeline
+    participant Artifacts as Model Artifacts
+
+    Client->>API: POST /predict with visa case fields
+    API->>Predictor: Validate and transform request
+    Predictor->>Artifacts: Load preprocessor and model
+    Artifacts-->>Predictor: Active artifacts
+    Predictor-->>API: Prediction result
+    API-->>Client: Prediction response

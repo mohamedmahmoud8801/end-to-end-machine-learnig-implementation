@@ -1,0 +1,11 @@
+flowchart LR
+    DS[Data Scientist] --> NB[EDA and Training Notebooks]
+    Operator[ML Engineer or Operator] --> Train[Training Pipeline]
+    Source[(Visa Dataset / MongoDB)]
+    Source --> Train
+    Train --> Artifacts[(Model Artifacts)]
+    Train --> Metrics[(Metrics and Reports)]
+    Artifacts --> API[Prediction API]
+    User[API Client / Web User] --> API
+    API --> Prediction[Visa Case Prediction]
+    API --> Logs[(Application Logs)]

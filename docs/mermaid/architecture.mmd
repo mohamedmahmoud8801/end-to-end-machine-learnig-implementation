@@ -1,0 +1,17 @@
+flowchart TD
+    A[Raw Visa Data] --> B[Data Ingestion]
+    B --> C[Data Validation]
+    C --> D[Data Transformation]
+    D --> E[Model Training]
+    E --> F[Model Evaluation]
+    F --> G{Meets Promotion Criteria?}
+    G -- Yes --> H[Model Pusher / Registry]
+    G -- No --> I[Reject Model and Keep Previous Version]
+    H --> J[Prediction Pipeline]
+    J --> K[FastAPI Service]
+    K --> L[Prediction Response]
+
+    C --> M[Validation Reports]
+    E --> N[Training Metrics]
+    F --> O[Evaluation Reports]
+    K --> P[Inference Logs]

@@ -1,0 +1,12 @@
+{
+  "headless": true,
+  "args": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage",
+    "--disable-crash-reporter",
+    "--disable-crashpad",
+    "--no-zygote",
+    "--single-process"
+  ]
+}

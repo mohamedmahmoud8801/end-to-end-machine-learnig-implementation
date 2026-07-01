@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant Operator
+    participant Pipeline as Training Pipeline
+    participant Source as Data Source
+    participant Validator as Data Validator
+    participant Transformer as Transformer
+    participant Trainer as Model Trainer
+    participant Evaluator as Model Evaluator
+    participant Registry as Model Registry
+
+    Operator->>Pipeline: Start training run
+    Pipeline->>Source: Extract raw visa data
+    Pipeline->>Validator: Validate schema and data quality
+    Validator-->>Pipeline: Validation report
+    Pipeline->>Transformer: Fit preprocessing and transform data
+    Transformer-->>Pipeline: Train/test arrays and preprocessor
+    Pipeline->>Trainer: Train candidate models
+    Trainer-->>Pipeline: Best model and metrics
+    Pipeline->>Evaluator: Compare against promotion criteria
+    Evaluator-->>Pipeline: Evaluation decision
+    Pipeline->>Registry: Push approved model
