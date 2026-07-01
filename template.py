@@ -15,7 +15,7 @@ list_of_files = [
     f"{project_name}/components/model_evaluation.py",
     f"{project_name}/components/model_pusher.py",
     f"{project_name}/configration/__init__.py",
-    f"{project_name}/constant/__init__.py",
+    f"{project_name}/constants/__init__.py",
     f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/config_entity.py",
     f"{project_name}/entity/artifact_entiy.py",
@@ -33,7 +33,7 @@ list_of_files = [
     "demo.py",
     "setup.py",
     "config/model.yaml",
-    "config/schem.yaml"
+    "config/schema.yaml"
 
 
 ]
