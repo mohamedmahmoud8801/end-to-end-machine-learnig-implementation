@@ -107,7 +107,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 315865595366.dkr.ecr.us-east-1.amazonaws.com/usvisarepo
+    - Save the URI: 420609646286.dkr.ecr.eu-north-1.amazonaws.com/usvisarepo
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
